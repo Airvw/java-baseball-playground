@@ -30,17 +30,17 @@ ex) git checkout -b apply-feedback
 
 ---
 - 게임로직
-  1. play 기능
+  - play 기능
     - 상대방(컴퓨터)의 수를 맞출 때 까지 게임진행
 
-  2. generate 기능
+  - generate 기능
     - 상대방(컴퓨터)의 3자리 수 생성
 
-  3. check 기능
+  - check 기능
     - 입력 값에 대한 결과 확인
 
 ---
 - UI 로직
-  1. 입력 기능
+  - 입력 기능
 
-  2. 출력 기능
+  - 출력 기능
