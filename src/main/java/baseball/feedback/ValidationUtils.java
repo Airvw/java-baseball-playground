@@ -1,8 +1,10 @@
 package baseball.feedback;
 
 public class ValidationUtils {
+    public static final int MIN_NUM = 1;
+    public static final int MAX_NUM = 9;
 
     public static boolean validNum(int num) {
-        return num >= 1 && num <= 9;
+        return num >= MIN_NUM && num <= MAX_NUM;
     }
 }
