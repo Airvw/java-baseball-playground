@@ -18,6 +18,15 @@ public class Balls {
                         .toList());
     }
 
+    public PlayResult play(List<Integer> playerNumList){
+        PlayResult result = new PlayResult();
+        IntStream.range(0, playerNumList.size())
+                .mapToObj(i -> new Ball(i + 1, playerNumList.get(i)))
+                .map(this::play)
+                .forEach(result::checkStatus);
+        return result;
+    }
+
     public BallStatus play(Ball playerBall) {
         return ballList.stream()
                 .map(ball -> ball.play(playerBall))
